@@ -145,29 +145,6 @@
 			<key>config</key>
 			<dict>
 				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>dig +short myip.opendns.com @resolver1.opendns.com</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>D9844C57-BADA-4AC6-B850-73F3D0BE3383</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
 				<true/>
 				<key>escaping</key>
 				<integer>102</integer>
@@ -200,6 +177,29 @@ exit</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>96267CC0-F198-4BA0-B872-3D8B757E93EF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>dig +short myip.opendns.com @resolver1.opendns.com</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D9844C57-BADA-4AC6-B850-73F3D0BE3383</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -269,22 +269,6 @@ exit</string>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
-				<string>{var:oldip}
-{var:newip}</string>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>9F0670B5-E227-4D93-8E72-B88135266539</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
 				<string>{query}</string>
 				<key>variables</key>
 				<dict>
@@ -296,6 +280,22 @@ exit</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>C9E06A10-B343-449A-86AD-B920C5EBCBA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:oldip}
+{var:newip}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9F0670B5-E227-4D93-8E72-B88135266539</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -386,6 +386,6 @@ Workflow by John Behm, jxsl13@github</string>
 	<key>version</key>
 	<string>1.0</string>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/jxsl13/reconnect-fritzbox</string>
 </dict>
 </plist>
