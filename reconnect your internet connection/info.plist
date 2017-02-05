@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.jxsl13.reconnectFritzBox</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>1A5C2E50-9EF2-451B-877C-B66AF3939641</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>89137E02-2E5A-45EE-A133-B91ED4E9F55A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>89137E02-2E5A-45EE-A133-B91ED4E9F55A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>96267CC0-F198-4BA0-B872-3D8B757E93EF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F0670B5-E227-4D93-8E72-B88135266539</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>96267CC0-F198-4BA0-B872-3D8B757E93EF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9844C57-BADA-4AC6-B850-73F3D0BE3383</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9C8F8222-1189-4E95-912A-9A578ECB6953</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1A5C2E50-9EF2-451B-877C-B66AF3939641</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9F0670B5-E227-4D93-8E72-B88135266539</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9886263-6EA4-4D0F-A4EC-F0093176F4B6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C9E06A10-B343-449A-86AD-B920C5EBCBA6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F0670B5-E227-4D93-8E72-B88135266539</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D9844C57-BADA-4AC6-B850-73F3D0BE3383</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C9E06A10-B343-449A-86AD-B920C5EBCBA6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>John Behm</string>
+	<key>description</key>
+	<string>Reconnects your internet connection and refreshes your external IP.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Reconnect your interent connection</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>reconnect</string>
+				<key>subtext</key>
+				<string>reconnect your Fritz!Box</string>
+				<key>text</key>
+				<string>reconnect</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>9C8F8222-1189-4E95-912A-9A578ECB6953</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>dig +short myip.opendns.com @resolver1.opendns.com</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>D9844C57-BADA-4AC6-B850-73F3D0BE3383</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<true/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+####### DO NOT TOUCH
+varNEW=igdupnp
+varOLD=upnp
+####### DO NOT TOUCH - END
+
+# If your Fritz!Box is not found, maybe you should change this default IP to the one of your
+# Fritz!Box
+
+IP=fritz.box
+
+
+# Please try to replace $varNEW with $varOLD if your Fritz!Box router does not reconnect.
+
+curl -s "http://$IP:49000/$varNEW/control/WANIPConn1" -H "Content-Type: text/xml; charset="utf-8"" -H "SoapAction:urn:schemas-upnp-org:service:WANIPConnection:1#ForceTermination" -d "@reconnect.xml" &gt;/dev/null
+
+exit</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>96267CC0-F198-4BA0-B872-3D8B757E93EF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>dig +short myip.opendns.com @resolver1.opendns.com</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>1A5C2E50-9EF2-451B-877C-B66AF3939641</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>oldip</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>89137E02-2E5A-45EE-A133-B91ED4E9F55A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Old  IP: {var:oldip}New IP: {var:newip}</string>
+				<key>title</key>
+				<string>Reconnect Status:</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>D9886263-6EA4-4D0F-A4EC-F0093176F4B6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:oldip}
+{var:newip}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>9F0670B5-E227-4D93-8E72-B88135266539</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>variables</key>
+				<dict>
+					<key>newip</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C9E06A10-B343-449A-86AD-B920C5EBCBA6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow only works with a Fritz!Box router.
+___________________________________________________________________
+If you have issues with the reconnect workflow, consider changing a few things in the BLUE /bin/bash script.
+____________________________________________________________________
+
+TROUBLESHOOTING:
+
+If you are using a Fritz!Box with FRITZ!OS 06.03 or less, replace 
+all $varNEW variable with $varOLD
+
+If your Fritz!Box is not found, maybe you should change its default IP to the one of yourFritz!Box
+____________________________________________________________________
+
+CREDITS:
+
+Inspiration from this forum thread: https://www.alfredforum.com/topic/3064-reconnect-your-fritzbox-to-the-internet/
+
+Most information about reconnecting a Fritz!Box via shell script:
+http://www.gtkdb.de/index_7_1302.html
+
+Workflow by John Behm, jxsl13@github</string>
+	<key>uidata</key>
+	<dict>
+		<key>1A5C2E50-9EF2-451B-877C-B66AF3939641</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>89137E02-2E5A-45EE-A133-B91ED4E9F55A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>96267CC0-F198-4BA0-B872-3D8B757E93EF</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>9</integer>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>9C8F8222-1189-4E95-912A-9A578ECB6953</key>
+		<dict>
+			<key>xpos</key>
+			<integer>10</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>9F0670B5-E227-4D93-8E72-B88135266539</key>
+		<dict>
+			<key>xpos</key>
+			<integer>460</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>C9E06A10-B343-449A-86AD-B920C5EBCBA6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>370</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>D9844C57-BADA-4AC6-B850-73F3D0BE3383</key>
+		<dict>
+			<key>xpos</key>
+			<integer>560</integer>
+			<key>ypos</key>
+			<integer>10</integer>
+		</dict>
+		<key>D9886263-6EA4-4D0F-A4EC-F0093176F4B6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>530</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>1.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
