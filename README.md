@@ -4,20 +4,20 @@ This is an Alfred workflow. It is intended to reconnect your Fritz!Box with one 
 
 
 
-##Installation:
+## Installation:
 You install the workflow by simply double clicking the *.alfredworkflow file.
 
-##Usage: 
+## Usage: 
 You simply type "reconnect" in your Aflfred search bar and the process is started.
 
-##How does it work?
+## How does it work?
 1.  Firstly you will get notified about your current external IP address.
 2.  Then your Fritz!Box will get a UPnP message to reconnect your internet connection.
 3.  Lastly you will get a second notification showing your *old IP* in comparison to your **new IP**
 
-##Troubleshooting:
+## Troubleshooting:
 
-###Your FRITZ!OS Version is 6.03 or lower:
+### Your FRITZ!OS Version is 6.03 or lower:
 Please open your Alfred Preferences and find this workflow.
 Then double click the BLUE /bin/bash script.
 You will find a few lines looking like this:
@@ -28,7 +28,7 @@ curl -s "http://$IP:49000/$varNEW/control/WANIPConn1" -H "Content-Type: text/xml
 
 Please change `$varNEW` to `$varOLD`
 
-###Your fritz.box router could not be found:
+### Your fritz.box router could not be found:
 Please open your Alfred Preferences and find this workflow.
 Then double click the BLUE /bin/bash script.
 You will find a  line looking like this:
